@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Classic</title>	
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style type="text/css">
+   
+   * , *:after , *:before {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: lucida sans ;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+.margin-bottom {
+    margin-bottom: 20px
+}
+
+.navbar{
+	padding: 30px;
+	background:#fff;
+	border-bottom: 1px solid #000;
+}
+
+.logo{
+	margin: 20px;
+	float: left;
+	width: 50%
+}
+
+.logo-text{
+	font-weight: bold;
+	font-size:30px;
+}
+
+.ul-list{
+	float: right;
+	width: 50%;
+	list-style: none;
+	margin-top: -30px
+}
+
+.list-item{
+	display: inline-block;
+}
+
+.list-item a{
+	text-decoration: none;
+	padding:10px 15px;
+	color: #000;
+	font-weight: bold;
+}
+
+.list-item a:hover{
+	color: red
+}
+  
+.Home{
+	background-image: url("https://github.com/HamzaNabil/Template-HTML_CSS_MediaQuery/blob/master/images/Home/home-bg.jpg?raw=true");
+	background-size: cover;
+	text-align: center;
+	height: 500px;
+	background-position: center;
+	position: relative;
+}
+
+.home-information{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+
+.home-info1{
+	font-weight: bold;
+	font-size: 60px;
+	color: #5e5e5e;
+}
+
+.home-info2{
+	font-weight: bold;
+	font-size: 35px;
+	color: #eb5424;
+	padding:50px 0 20px;
+}
+
+.home-desc{
+	color: #888;
+	font-size: 15px;
+	line-height: 1.5;
+	padding-bottom: 20px
+}
+
+.home-desc span{
+	color: #000
+}
+
+.button{
+	color: #fff;
+	background: #eb5424;
+	padding: 15px;
+	font-weight: bold;
+	font-size: 18px;
+	cursor: pointer;
+	border:0;
+	width: 150px
+}
+
+.Work{
+	margin: 100px 0 60px;
+}
+
+.work-info{
+	font-size: 60px;
+	margin-bottom: 50px
+}
+
+.work-info span{
+	font-weight: normal;
+}
+
+.Part{
+	margin-top: 20px;
+	height: auto;
+	float: left;
+	box-sizing: border-box;
+	width: 30%;
+	padding: 100px 0;
+	text-align: center;
+	border:1px solid #888;
+	margin-left: 5%
+}
+
+i{
+	padding-bottom: 50px;
+	color: #888
+}
+
+.part-info{
+	color: #eb5424;
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+hr{
+	width: 60%;
+    margin: auto;
+    margin-bottom: 20px
+}
+
+.part-desc{
+	color: #888;
+	padding:20px 20px;
+	font-size: 14px
+}
+
+.Work .first{
+	margin-left: 0
+}
+
+.clear{
+	clear: both;
+}
+
+.Portoflio{
+	margin-top: 50px;
+    text-align: center;
+    background-color: #f8f8f8;
+    padding-top: 60px
+}
+
+.portoflio-info{
+	font-size: 35px;
+	padding-bottom: 30px;
+}
+
+.portoflio-info span{
+	font-weight: normal;
+}
+
+
+.portoflio-item{
+	display: inline-block;
+	padding: 25px
+}
+
+.portoflio-item.active{
+	color: #fff;
+	background-color: #eb5424
+}
+
+.box div{
+	width: 25%;
+	float: left;
+	position: relative;
+}
+
+.box div img{
+	width: 100%;
+}
+
+.box div .overlay{
+	position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(235,84,36 , 0.5);
+    font-size: 15px;
+    opacity: 0
+
+}
+
+.box div .overlay span{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    display: block;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 2px solid #eb5424;
+    }
+
+    .box div:hover .overlay{
+    	opacity: 1
+    }
+
+    .Profile{
+    	float: left;
+    	width: 50%;
+
+    }
+
+    .profile-information{
+    	padding-top: 80px;
+    	margin-left: 50px;
+    }
+
+    .profile-info{
+    	font-size: 35px
+    }
+
+    .profile-info span{
+       font-weight: normal;
+    }
+
+    .profile-list{
+    	list-style: none;
+    	padding-top: 20px;
+    	margin-left: 28px
+    }
+
+    .profile-item{
+    	margin-bottom: 8px;
+    	font-weight: normal;
+    }
+
+     .profile-item span{
+        display: inline-block;  
+        width: 100px;
+        font-weight: bold; 
+    }
+
+       .profile-item span.web{
+       	color: #eb5424;
+       	font-weight: normal;
+       }
+
+      .Skills{
+      	float: right;
+      	width: 50%;
+        margin-right: -400px;
+        margin-top: -220px
+      }
+
+      .skills-info{
+      	font-size: 30px;
+      	padding-bottom: 20px
+      }
+
+      .skills-info span{
+      	font-weight: normal;
+      }
+     
+     .skills-desc{
+     	color: #888;
+     	font-size: 14px;
+     	line-height: 1.5;
+     	padding-bottom: 20px;
+     }
+
+     .bar{
+     overflow: hidden;
+    padding: 10px 0;
+    margin-bottom: 10px
+     }
+
+     .bar .title{
+     	float: left;
+     }
+
+     .bar .perc{
+     	float: right;
+
+     }
+
+     .parent{
+     height: 2px;
+    clear: both;
+    background: #f8f8f8;
+    position: relative;
+    top: 5px
+     }
+
+     .parent span{
+    background: #eb5424;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0
+     }
+
+     .sp1{
+     	width: 100%
+     }
+
+     .sp2{
+     	width:90%
+     }
+
+     .sp3{
+     	width:80%;
+     }
+
+     .Creator{
+     	height: 600px;
+     	background-image: url("https://github.com/HamzaNabil/Template-HTML_CSS_MediaQuery/blob/master/images/creative/about-bg.jpg?raw=true");
+     	background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        margin-top: 50px
+     }
+
+     .creator-info{
+     	width: 50%;
+     	padding-top: 150px;
+     	float:right;
+     	text-align: center;
+     }
+
+     .creator-title{
+     	font-size: 40px;
+     	padding-bottom: 40px
+     }
+
+     .creator-title span{
+     	font-weight: normal;
+     }
+
+     .creator-text{
+     	color: #eb5424;
+     	font-size: 30px;
+     	padding-bottom: 30px
+     }
+
+     .creator-desc{
+     	line-height: 1.8;
+
+     }
+
+     .creator-desc a{
+     	text-decoration: none;
+     	color: purple
+     }
+
+     .Social-Media{
+     height: auto;
+    overflow: hidden
+     }
+
+     .facebook{
+     	background: #3b5998;
+     	width: 33.33%;
+    float: left;
+    box-sizing: border-box;
+    padding: 100px 0 100px 60px
+     }
+
+     .twitter{
+     	background:#498cbf;
+     	width: 33.33%;
+    float: left;
+    box-sizing: border-box;
+    padding: 100px 0 100px 60px
+     }
+
+     .pinterest{
+     	background:#cc2127;
+     	width: 33.33%;
+        float: left;
+        box-sizing: border-box;
+        padding: 100px 0 100px 60px
+     }
+
+     .Social-Media i{
+    width: 50px;
+    height: 10px;
+    background: #fff;
+    text-align: center;
+    line-height: 50px;
+    color: #888;
+    float: left;
+    margin-right: 10px
+     }
+
+     .Social-Media p{
+     	font-weight: bold;
+        font-size: 20px;
+        color: #fff
+     }
+
+     .Social-Media p span{
+     	display: block;
+     	padding-bottom: 8px
+     }
+
+     .Social-Media p span.info2{
+      font-weight: normal;
+     }
+
+     .Footer{
+     	 padding-top: 30px;
+     	 padding-bottom: 30px;
+     	 text-align: center;
+     }
+
+     .footer-desc{
+     	color: #888;
+     	font-size: 15px
+     }
+
+
+	</style>
+
+
+
+</head>
+
+<body>
+<div class="navbar">
+	<div class="container">
+		<div class="Logo">
+			<h2 class="logo-text">Ultra Profile</h2>
+		</div>
+
+		<ul class="ul-list">
+			<li class="list-item"><a href="#">Home</a></li>
+			<li class="list-item"><a href="#">Work</a></li>
+			<li class="list-item"><a href="#">Portoflio</a></li>
+			<li class="list-item"><a href="#">Resume</a></li>
+			<li class="list-item"><a href="#">About</a></li>
+			<li class="list-item"><a href="#">Contact</a></li>
+		
+		</ul>
+
+	</div>
+	
+</div>
+
+<div class="Home">
+	<div class="container">
+		<div class="home-information">
+			<h2 class="home-info1">Aya Hammad</h2>
+			<h4 class="home-info2">Creative Director</h4>
+			<p class="home-desc">Iam a professional <span>UX Designer</span> and Front-End Developer creating modern and resposive designs to Web and Mobile. Let us work together. Thank you.</p>
+			<button class="button">Let's Begin</button>
+		</div>
+		
+	</div>
+	
+</div>
+
+<div class="Work">
+	<div class="container">
+		<h1 class="work-info"><span>My </span>Work</h1>
+
+	<div class="Part first">
+		<i class="icon fa fa-chain fa-2x"></i>
+		<h4 class="part-info">Mobile Ux</h4>
+		<hr>
+		<p class="part-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quos omnis voluptas ea ipsam! Voluptas.</p>
+	</div>
+
+	<div class="Part">
+		<i class="icon fa fa-bolt fa-2x"></i>
+		<h4 class="part-info">Mobile Ux</h4>
+		<hr>
+		<p class="part-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quos omnis voluptas ea ipsam! Voluptas.</p>
+	</div>
+
+	<div class="Part last">
+		<i class="icon fa fa-tachometer  fa-2x"></i>
+		<h4 class="part-info">Mobile Ux</h4>
+		<hr>
+		<p class="part-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quos omnis voluptas ea ipsam! Voluptas.</p>
+	</div>
+
+	</div>
+	
+</div>
+<div class="clear"></div>
+
+<div class="Portoflio">
+	<h2 class="portoflio-info"><span>My </span>Portoflio</h2>
+	<ul class="portoflio-list">
+		<li class="portoflio-item active">All</li>
+		<li class="portoflio-item">HTML</li>
+		<li class="portoflio-item">Mobile</li>
+		<li class="portoflio-item">Photoshop</li>
+		<li class="portoflio-item">Wordpress</li>
+		
+	</ul>
+</div>
+
+<div class="box">
+	<div>
+		<img src="https://github.com/HamzaNabil/Template-HTML_CSS_MediaQuery/blob/master/images/Portfolio/portfolio-img1.jpg?raw=true" alt="">
+		<p class="overlay">
+			<span>Show Image</span>
+		</p>
+	</div>
+	
+	<div>
+		<img src="https://github.com/HamzaNabil/Template-HTML_CSS_MediaQuery/blob/master/images/Portfolio/portfolio-img2.jpg?raw=true" alt="">
+		<p class="overlay">
+			<span>Show Image</span>
+		</p>
+	</div>
+
+	<div>
+		<img src="https://github.com/HamzaNabil/Template-HTML_CSS_MediaQuery/blob/master/images/Portfolio/portfolio-img3.jpg?raw=true" alt="">
+		<p class="overlay">
+			<span>Show Image</span>
+		</p>
+	</div>
+
+	<div>
+		<img src="https://github.com/HamzaNabil/Template-HTML_CSS_MediaQuery/blob/master/images/Portfolio/portfolio-img4.jpg?raw=true" alt="">
+		<p class="overlay">
+			<span>Show Image</span>
+		</p>
+	</div>
+
+	<div>
+		<img src="https://github.com/HamzaNabil/Template-HTML_CSS_MediaQuery/blob/master/images/Portfolio/portfolio-img5.jpg?raw=true" alt="">
+		<p class="overlay">
+			<span>Show Image</span>
+		</p>
+	</div>
+
+	<div>
+		<img src="https://github.com/HamzaNabil/Template-HTML_CSS_MediaQuery/blob/master/images/Portfolio/portfolio-img6.jpg?raw=true" alt="">
+		<p class="overlay">
+			<span>Show Image</span>
+		</p>
+	</div>
+
+	<div>
+		<img src="https://github.com/HamzaNabil/Template-HTML_CSS_MediaQuery/blob/master/images/Portfolio/portfolio-img7.jpg?raw=true" alt="">
+		<p class="overlay">
+			<span>Show Image</span>
+		</p>
+	</div>
+
+	<div>
+		<img src="https://github.com/HamzaNabil/Template-HTML_CSS_MediaQuery/blob/master/images/Portfolio/portfolio-img8.jpg?raw=true" alt="">
+		<p class="overlay">
+			<span>Show Image</span>
+		</p>
+	</div>
+
+</div>
+
+<div class="Profile">
+	<div class="container">
+		<div class="profile-information">
+			<h2 class="profile-info"><span>My </span>Profile</h2>
+			<ul class="profile-list">
+				<li class="profile-item">
+					<span>Name</span>
+					Aya Hammad
+				</li>
+
+				<li class="profile-item">
+					<span>Birthday</span>
+					21/7/2000
+				</li>
+
+				<li class="profile-item">
+					<span>Address</span>
+					Ain shams
+				</li>
+
+				<li class="profile-item">
+					<span>Phone</span>
+					9854750014
+				</li>
+
+				<li class="profile-item">
+					<span>Email</span>
+					hamza@hamza.com
+				</li>
+
+				<li class="profile-item">
+					<span>Website</span>
+					<span  class="web">www.google.com</span>
+				</li>
+				
+			</ul>
+			
+		</div>
+
+		<div class="Skills">
+			<h2 class="skills-info">Some <span>Skills</span></h2>
+			<p class="skills-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos praesentium blanditiis esse cupiditate, omnis similique.</p>
+			<div class="bar">
+				<span class="title">Bootstrap</span>
+				<span class="perc">100%</span>
+			
+			<div class="parent">
+				<span class="sp1"></span>
+				</div>
+			</div>
+
+				<div class="bar">
+				<span class="title">CSS3</span>
+				<span class="perc">90%</span>
+			
+			<div class="parent">
+				<span class="sp2"></span>
+				</div>
+			</div>
+
+				<div class="bar">
+				<span class="title">Photoshop</span>
+				<span class="perc">80%</span>
+			
+			<div class="parent">
+				<span class="sp3"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+<div class="clear"></div>
+<div class="Creator">
+	<div class="container">
+		<div class="creator-info">
+			<h2 class="creator-title"><span>This Is </span>Me</h2>
+			<h4 class="creator-text">Creative Director</h4>
+			<p class="creator-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim est <a href="#">explicabo </a>maxime quibusdam quaerat nihil aliquid aperiam deleniti, repellendus dolorum. Possimus nisi cupiditate ad veritatis?</p>
+		</div>
+	</div>
+	
+</div>
+
+<div class="Social-Media">
+	<div class="facebook">
+		 <i class="icon fa fa-facebook fa-lg"></i>
+		<p>
+			<span class="info1">FOLLOW ME ON</span>
+			<span class="info2">SOCIAL FACEBOOK</span>
+		</p>
+	</div>
+
+	<div class="twitter">
+		 <i class="icon fa fa-twitter fa-lg"></i>
+		<p>
+			<span class="info1">TWEET ME ON</span>
+			<span class="info2">SOCIAL TWITTER</span>
+		</p>
+	</div>
+
+	<div class="pinterest">
+		 <i class="icon fa fa-pinterest fa-lg"></i>
+		<p>
+			<span class="info1">PIN ME ON</span>
+			<span class="info2">SOCIAL PINTEREST</span>
+		</p>
+	</div>
+</div>
+<div class="clear"></div>
+
+<div class="Footer">
+	<p class="footer-desc">copyright &copy; 2018 by ultra profile </p>
+</div>
+</body>
+</html>
